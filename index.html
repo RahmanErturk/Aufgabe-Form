@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Inter:wght@400;700&family=Lobster&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Raleway:ital@1&family=Roboto+Mono:wght@300;400&family=Ubuntu:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <h2>Personal Data</h2> <br>
+        <form action="">
+            <label>
+                <p>First Name:</p>
+                <input type="text" name="vorname" class="form1" required >
+            </label><br>
+            <label>
+                <p>Last Name:</p>
+                <input type="text" name="lastname" class="form1" required>
+            </label><br>
+            <label>
+                <p>Street:</p>
+                <input type="text" name="straße" class="form1" required>
+            </label><br>
+            <label>
+                <p>Zipcode:</p>
+                <input type="number" name="postleitzahl" class="form1" required>
+            </label><br>
+            <label>
+                <p>City:</p>
+                <input type="text" name="stadt" class="form1" required>
+            </label><br>
+            <label>
+                <p>Phone:</p>
+                <input type="number" name="telefon" class="form1">
+            </label><br>
+            <label>
+                <p>Email:</p>
+                <input type="email" name="email" class="form1" required>
+            </label><br>
+            <label>
+                <p>Comments:</p>
+                <textarea name="kommentar" placeholder="Tell us more about important colors,etc."></textarea>
+            </label>
+        </form><br><br>
+
+        <h2>Products</h2>
+        <form action="">
+            <label>
+                <p>Web Design:</p>
+          
+                <input type="radio" id="individual" name="wdesign" checked value="individual"> Individual
+             
+                <input type="radio" id="template" name="wdesign" value="template"> Template
+            </label><br>  
+            <label>
+                <p>Web Development:</p>
+                <input type="checkbox" name="webdev" id="basic-f-end"> HTML & CSS <br>
+                <input type="checkbox" name="webdev" id="f-end"> JavaScript <br>
+                <input type="checkbox" name="webdev" id="b-end"> MongoDB
+            </label><br>
+            <label>
+               <p>Project Start:</p>
+                <input type="date" name="projektstart" class="form2">
+            </label><br>
+            <label>
+                <p>Project End:</p>
+                <input type="date" name="projektende" class="form2">
+            </label><br>
+            <label>
+                <p>Category:</p>
+                <select name="kategori" class="form2">
+                    <option value="personal">Personal</option>
+                    <option value="gruppe">Group</option>
+                    <option value="familie">Family</option>
+                    <option value="freunde">Friends</option>
+                </select>
+            </label>
+            
+        </form><br>
+        <button>Order our services</button>
+    </main>
+</body>
+</html>
